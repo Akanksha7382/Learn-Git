@@ -52,17 +52,6 @@ git stash drop stash@{0}
 git stash clear
 ```
 
-### 🔥 Real Use Case
-
-Imagine you're working on a feature:
-
-- You are halfway done coding
-- Suddenly a bug fix is needed in production branch
-
-👉 Instead of committing unfinished code:
-```
-git stash
-git checkout main
 ```
 
 Later:
