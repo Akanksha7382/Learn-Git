@@ -51,10 +51,46 @@ git stash drop stash@{0}
 ```
 git stash clear
 ```
-
-```
+---
 
 Later:
 ```
 git stash pop
 ```
+## Real-life example
+
+- You're on feature/login.
+```
+git status
+```
+```
+Modified: Login.js
+Modified: App.js
+```
+
+- Save your work:
+```
+git stash
+```
+
+- Switch to another branch:
+```
+git checkout main
+```
+
+- Pull the latest code:
+```
+git pull
+```
+
+- Go back to your branch:
+```
+git checkout feature/login
+```
+
+- Restore your work:
+```
+git stash apply
+```
+Now your changes are back, and you can continue where you left off.
+
